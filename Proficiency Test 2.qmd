@@ -40,3 +40,14 @@ count_above(mtcars$disp,150)
 ## Task 3
 
 Making functions essentially means that certain functions will perform different tasks when in the presence of certain packages. For example when the dplyr function is present, some of the functions in base R will not perform the same tasks, because the package defines those same functions differently. 
+
+
+## Task 4
+
+```{r}
+iris$Sepal.Length[1] # This returns the length of the first sepal in the Iris Data Set
+
+iris[1,1]
+
+```
+
