@@ -13,4 +13,27 @@ for(x in mtcars$mpg[1:3]) {
 }
 
 ```
+## Task 2
+
+```{r}
+count_above <- function(numeric_vector, cuttoff_value) { # creates the function with numeric_vector and cuttoff_value as arguments
+  count <- 0 # sets the initial count to 0
+  
+  for (i in 1:length(numeric_vector)) { # creates a for loop to iterate through the vector
+    if (numeric_vector[i] > cuttoff_value) { # this is a selection statement to see whether the cuttoff value is greater than a certain number in the vector
+      count <- count +1 # adds 1 to the count if the observation is greater than the cutoff value 
+    }
+}
+  return(count) # returns the count 
+}
+
+```
+```{r}
+count_above(iris$Sepal.Length, 6)
+```
+
+
+```{r}
+count_above(mtcars$disp,150)
+```
 
